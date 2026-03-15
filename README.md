@@ -30,3 +30,14 @@ Penyesuaian Variabel:
 1. Balance dilihat dari rata-rata selama horizon waktu & dilihat perubahan pada akhir tinjauan dan awal tinjauan
 2. Melihat kepemilikan jumlah produk dari rata-rata, maksimum, dan minimum pada periode tinjauan
 3. Status keaktifan nasabah dilihat dalam bentuk bulan
+
+# Kesimpulan
+Dari semua model, rata-rata memiliki accuracy di atas 60% namun memiliki recall di bawah 40%. Artinya, masih banyak nasabah yang sebenarnya berpotensi gagal bayar namun diprediksi tidak akan gagal bayar. Sehingga bisa disampaikan bahwa dalam iterasi pembangunan model kali ini, objektif yang diinginkan masih belum dapat tercapai.
+
+Solusi pengembangan kedepannya yang bisa dilakukan di antaranya:
+1. Memperbanyak sample (jumlah nasabah dgn asumsi dataset yang tersedia saat ini bukan total populasi nasabah)
+2. Melakukan oversampling terhadap kelas minoritas (gagal bayar) agar pembangunan model tidak bias
+3. Memperluas horizon waktu
+4. Mencoba variasi variabel lainnya (menambah variabel baru, atau membuang variabel yang memiliki nilai importance rendah pada hasil terakhir)
+5. Mencoba memperluas kombinasi hyperparameter dalam pembangunan model
+6. Mencoba algoritma supervised machine learning lainnya
